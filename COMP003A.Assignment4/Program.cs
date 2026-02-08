@@ -4,14 +4,14 @@
     {
         static void Main(string[] args)
         {
-            int progross = 0;
+            int progross = 0;             //Tracking all progress
             int maxAllowedSteps = 7;
             int safteyStopPoint = 5;
             int skippedStep = 3;
 
-            bool menuActive = true;
+            bool menuActive = true;       //Controlling menu reptition
 
-            while (menuActive)
+            while (menuActive)      //loops
             {
                 Console.WriteLine("1. Start/Continue Routine");
                 Console.WriteLine("2. View Progress");
@@ -22,13 +22,13 @@
 
                 if (userChoice == 1)
                 {
-                    if (progross >= safteyStopPoint)
+                    if (progross >= safteyStopPoint) //saftey steps
                     {
                         Console.WriteLine("Saftey limit has reached. Routine Stopped.");
                         continue;
                     }
 
-                    if (progross >= maxAllowedSteps)
+                    if (progross >= maxAllowedSteps) //max steps
                     {
                         Console.WriteLine("Maximum steps reached. Routine is complete.");
                         continue;
@@ -36,7 +36,7 @@
 
                     progross++;
 
-                    if (progross == skippedStep)
+                    if (progross == skippedStep) // skipped steps
                     {
                         Console.WriteLine($"Step {progross} is restricted and was skipped.");
                         continue;
@@ -53,7 +53,7 @@
                 else if (userChoice == 3)
                 {
 
-                    Console.WriteLine("Program ended.");
+                    Console.WriteLine("Program ended."); // ending program
                     menuActive = false;
 
                 }
