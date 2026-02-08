@@ -50,9 +50,13 @@
                 {
                     Console.WriteLine($"Current progress: {progross} steps completed.");
                 }
-                
+                else if (userChoice == 3)
                 {
 
+                    Console.WriteLine("Program ended.");
+                    menuActive = false;
+
+                }
             }
 
         }
