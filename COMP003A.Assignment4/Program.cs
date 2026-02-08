@@ -42,7 +42,16 @@
                         continue;
                     }
 
+                    Console.WriteLine($"Routine step {progross} completed.");
+
+
                 }
+                else if (userChoice == 2)
+                {
+                    Console.WriteLine($"Current progress: {progross} steps completed.");
+                }
+                
+                {
 
             }
 
