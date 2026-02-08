@@ -36,6 +36,11 @@
 
                     progross++;
 
+                    if (progross == skippedStep)
+                    {
+                        Console.WriteLine($"Step {progross} is restricted and was skipped.");
+                        continue;
+                    }
 
                 }
 
